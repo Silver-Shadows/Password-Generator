@@ -149,7 +149,7 @@ public class PasswordGeneratorPart4 {
       isTrueSymbols = "symbols no";
     }
 
-    // Change the newpassword to string using Collectors so the password will print without  [ , , ,]
+    // Change the newpassword to string using Collectors so the password will print without  [ , , ]
     String password = newpassword.stream().map(String::valueOf).collect(Collectors.joining(""));
 
     // Echo user input in and display the password using JOptionPane
